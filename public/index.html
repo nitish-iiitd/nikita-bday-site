@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday ❤️</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<canvas id="confetti"></canvas>
+
+<!-- Floating glow -->
+<div class="glow-orbs" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+</div>
+
+<!-- Balloons -->
+<div class="balloons" aria-hidden="true">
+    <div class="balloon b1"></div>
+    <div class="balloon b2"></div>
+    <div class="balloon b3"></div>
+    <div class="balloon b4"></div>
+    <div class="balloon b5"></div>
+</div>
+
+<header class="hero">
+    <div class="badge">🎉 It’s Your Day! 🎉</div>
+    <h1>Happy Birthday, <span class="name">Nikku</span> 💖</h1>
+    <p class="subtitle">A tiny party on the internet — just for you.</p>
+
+    <div class="cta-row">
+        <button id="partyBtn" class="btn primary">Start the Party 🎊</button>
+        <button id="musicBtn" class="btn">Music: Off 🎵</button>
+    </div>
+
+    <div class="countdown">
+        <span class="chip">🕛</span>
+        <span id="countdownText">Loading surprise...</span>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="card">
+        <h2>💌 A little note</h2>
+        <p>
+            Today I celebrate you — your smile, your strength, your craziness,
+            and the way you make everything feel like home.
+        </p>
+        <p class="signature">— Forever yours ❤️</p>
+    </section>
+
+    <section class="card">
+        <h2>✨ Reasons I adore you</h2>
+        <ul class="reasons">
+            <li>🌼 You turn ordinary days into something magical.</li>
+            <li>😄 Your laugh is my favorite sound.</li>
+            <li>🧠 You inspire me every single day.</li>
+            <li>🍰 You make life sweeter (even without cake).</li>
+            <li>💖 You are my safest place.</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>🎁 One last thing...</h2>
+        <p>Click the gift for a surprise message.</p>
+
+        <button id="giftBtn" class="gift">🎁</button>
+
+        <div id="surprise" class="surprise hidden">
+            <div class="surprise-inner">
+                <h3>Happy Birthday ❤️</h3>
+                <p>
+                    I promise to keep choosing you every day.
+                    Let’s make this year even more beautiful together. 🥂✨
+                </p>
+                <button id="closeSurprise" class="btn primary">Aww ❤️</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <span>Made with ❤️ + 🎉</span>
+            <span class="muted">Best viewed with love.</span>
+        </div>
+    </footer>
+
+</main>
+
+<audio id="bgm" loop>
+    <source src="music/bday_music.mp3" type="audio/mpeg" />
+</audio>
+
+<script src="app.js"></script>
+</body>
+</html>
